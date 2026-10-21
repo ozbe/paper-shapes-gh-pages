@@ -1,0 +1,39 @@
+:root {
+  color-scheme: light dark;
+  --bg: #fdf6e9;
+  --fg: #2b2338;
+  --muted: #6b6275;
+  --link: #c2410c;
+  --accent: #e8604c;
+  --accent-2: #f6c445;
+  --rule: #eadcc4;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1f1a26;
+    --fg: #f4eee6;
+    --muted: #b9afc4;
+    --link: #ffa766;
+    --accent: #f6c445;
+    --accent-2: #4a3f5c;
+    --rule: #3a3247;
+  }
+}
+html { background: var(--bg); }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 1.125rem/1.65 ui-rounded, "SF Pro Rounded", -apple-system, system-ui, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+main { max-width: 38rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; border-top: .5rem solid var(--accent); }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 1.5rem; }
+h2 { font-size: 1.25rem; margin: 2rem 0 .5rem; }
+p, ul { margin: 0 0 1.25rem; }
+li { margin-bottom: .5rem; }
+a { color: var(--link); text-underline-offset: .15em; }
+.icon { width: 5rem; height: 5rem; border-radius: 22%; display: block; margin-bottom: 1.25rem; }
+.lede { font-size: 1.3rem; color: var(--muted); }
+footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .95rem; }
